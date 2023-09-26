@@ -1,1 +1,1 @@
-"<a class='gotoLine' href='#41:8'>41:8</a> Uncaught SyntaxError: Unexpected identifier 'Code'"
+Uncaught SyntaxError: Unexpected identifier 'Code'"
