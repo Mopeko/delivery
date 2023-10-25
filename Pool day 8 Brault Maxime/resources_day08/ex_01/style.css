@@ -1,0 +1,26 @@
+ul{
+    list-style: none;
+}
+.splide__slide img {
+    width: 100%;
+    height: 110%;
+}
+html{
+    background-color: gray;
+}
+#latest-creations-carousel{
+    width: 50%;
+    height: auto;
+    margin-right:auto;
+    margin-left:auto;
+}
+.is-next{
+    opacity: 0.5;
+    width: 450px;
+    height: 350px;
+}
+.is-prev{
+    opacity: 0.5;
+    width: 450px;
+    height: 350px;
+}

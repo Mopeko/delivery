@@ -1,0 +1,10 @@
+body{
+    overflow: hidden;
+    background: goldenrod;
+}
+img{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    
+}

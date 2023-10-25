@@ -1,0 +1,1 @@
+SELECT * FROM base_donnée_restapi.items;

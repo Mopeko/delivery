@@ -1,0 +1,108 @@
+html,body{
+    margin: 0;
+    font-family: 'Montserrat',sans-serif;
+}
+
+#parallax-container{
+    display: block;
+    height: 1038px;
+}
+#parallax-container div{
+    position: fixed;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+    transform: translateY(0);
+    height: 1038px;
+    width: 100%;
+}
+.layer-1{
+    background-image: url(/img/layer0.png);
+    background-color: #ffaf00;
+}
+.layer-2{
+    background-image: url(/img/layer1.png);
+}
+.layer-3{
+    background-image: url(/img/layer2.png);
+}
+.layer-4{
+    background-image: url(/img/layer3.png);
+}
+.layer-5{
+    background-image: url(/img/layer4.png);
+}
+.layer-6{
+    background-image: url(/img/layer5.png);
+}
+.layer-7{
+    background-image: url(/img/layer6.png);
+}
+.layer-8{
+    background-image: url(/img/layer7.png);
+}
+.layer-9{
+    background-image: url(/img/layer8.png);
+}
+
+#content{
+    background-color: #210002;
+    position: relative;
+    z-index: 1;
+}
+#content p{
+    margin-bottom: 0;
+}
+#content ul{
+    list-style: none;
+    padding: 0;
+    width: 325px;
+    display: inline-block;
+    margin: 0 25px;
+}
+#content li{
+    margin-bottom: 40px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+#content h4{
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #ffaf00;
+    color: #210002;
+}
+#content h4 img{
+    height: 17px;
+    width: auto;
+}
+#content .wrap{
+    max-width: 500px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 2;
+    background-color: #210002;
+    color: #ffaf00;
+    text-align: center;
+}
+#content h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+#content article p{
+    margin-bottom: 20px;
+    width: 325px;
+    display: inline-block;
+    text-align: left;
+    line-height: 32px;
+}
+#content p.left{
+    margin-right: 50px;
+}

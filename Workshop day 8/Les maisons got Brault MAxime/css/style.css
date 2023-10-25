@@ -1,0 +1,333 @@
+
+html{
+    
+    background-image: url("../images/bg.jpg");
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-attachment: fixed;
+
+ }
+
+    body{
+
+        margin: 0;
+    
+        width: 100%;
+    
+        height: auto;
+           
+        background-image: url(../images/texture_bg.png);
+    
+        background-repeat: repeat;
+    
+        background-attachment: fixed ;
+     }
+    
+     * {
+    
+        font-family: "Lato", sans-serif;
+    
+     }
+    .wrap{
+    
+        width: 960px;
+    
+        margin: auto;
+    
+    }
+    
+     
+    
+    .got-font, .got-font span{
+    
+        font-family: 'game_of_thronesregular';
+    
+        font-weight: normal;
+    
+        letter-spacing: 2px;
+    
+    }
+    
+     
+    
+/*titre*/
+    nav{
+        float: right;
+        position: relative;
+        top: -7px
+    }
+    nav li{
+        margin-right: 10px;
+    }
+    nav li.last{
+        margin-right: 0;
+    }
+    nav li a{
+        display: block;
+        height: 45px;
+        background-color: black;
+        transition: all 0.5s ease;
+    }
+    nav li a:hover{
+        height: 60px;
+    }
+    nav li a img{
+        position: relative;
+        top: 1px;
+        padding: 5px;
+        transition: all 0.5s ease;
+    }
+    nav li a img:hover{
+        top: 15px
+    }
+    h1, h2{
+    
+        margin-top: 0;
+    
+        margin-bottom: 0;
+    
+        color: white;
+    
+    }
+    
+     
+    
+    ul{
+    
+        list-style: none;
+    
+        margin: 0;
+    
+        padding: 0;
+    
+    }
+    
+    li{
+    
+        display: inline-block;
+    
+    }
+    
+    header.main{
+    
+        background-color: black;
+    
+        height: 150px;
+    
+        width: 100%;
+    
+        position: fixed;
+    
+        top: 0;
+    
+        z-index: 2;
+    
+    }
+    
+    h1{
+    
+        font-size: 33px;
+    
+        padding-top: 20px;
+    
+    }
+    
+    .got-font span{
+    
+        font-size: 80px;
+    
+    }
+    
+    
+    main{
+    
+        position: relative;
+    
+        top: 200px;
+    
+    }
+    article p{
+        text-align: justify;
+    }
+    
+    article{
+    
+        background-color: white;
+    
+        padding: 10px;
+    
+        margin-bottom: 20px;
+    
+        background-repeat: no-repeat;
+    
+        background-position: top right;
+    
+        padding-right: 95px;
+    
+        min-height:350px ;
+    
+    }
+    /*image sur coté div*/
+    article#stark{
+    
+        background-image: url("../images/div_stark.jpg");
+    
+    }
+    
+    article#lannister{
+    
+        background-image: url("../images/div_lannister.jpg");
+    
+    }
+    article#Baratheon{
+    
+        background-image: url("../images/div_baratheon.jpg");
+    
+    }
+    article#Tyrell{
+    
+        background-image: url("../images/div_tyrell.jpg");
+    
+    }
+    article#Martell{
+    
+        background-image: url("../images/div_martell.jpg");
+    
+    }
+    article#Tully{
+    
+        background-image: url("../images/div_tully.jpg");
+    
+    }
+    article#Arryn{
+    
+        background-image: url("../images/div_arryn.jpg");
+    
+    }
+    article#Greyjoy{
+    
+        background-image: url("../images/div_greyjoy.jpg");
+    
+    }
+    article#Targaryen{
+    
+        background-image: url("../images/div_targaryen.jpg");
+    
+    }
+    header.article {
+    
+        background-color: black;
+    
+        padding: 5px;
+    
+    }
+    
+    header.article img {
+    
+        float: left;
+    
+        height: 39px;
+    
+        margin-right: 5px;
+    
+    }
+    
+    h2{
+    
+        line-height: 39px;
+    
+        font-size: 18px;
+    
+    }
+    
+    blockquote{
+    
+        color: white;
+    
+        margin: 0;
+    
+        padding: 10px;
+    
+        display: inline-block;
+    
+    }
+    
+    article#stark blockquote{
+    
+        background-color: #939393;
+    
+    }
+    
+    article#lannister blockquote{
+    
+        background-color: #922020;
+    
+    }
+    article#Baratheon blockquote{
+    
+        background-color: #dfcb18;
+    
+    }
+    article#Tyrell blockquote{
+    
+        background-color: #4b9410;
+    
+    }
+    article#Martell blockquote{
+    
+        background-color: #d4850f;
+    
+    }
+    article#Tully blockquote{
+    
+        background-color: #ac0909;
+    
+    }
+    article#Arryn blockquote{
+    
+        background-color: #4671e7;
+    
+    }
+    article#Greyjoy blockquote{
+    
+        background-color: black;
+    
+    }
+    article#Targaryen blockquote{
+        background-color: black;
+    }
+    footer.main{
+        width: 100%;
+        height: auto;
+        min-height: 205px;
+        background-image: url('../images/bandeau_footer.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        position: relative;
+        top:200px;
+        color: silver;
+    }
+    footer.main a{
+        color:  inherit;
+        text-decoration: none;
+    }
+    footer.main a:hover{
+        text-decoration: underline;
+    }
+    /*importe la police game of throne*/
+@font-face {
+    font-family: 'game_of_thronesregular';
+    src: url('../font/game_of_thrones-webfont.eot');
+    src: url('../font/game_of_thrones-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/game_of_thrones-webfont.woff2') format('woff2'),
+         url('../font/game_of_thrones-webfont.woff') format('woff'),
+         url('../font/game_of_thrones-webfont.ttf') format('truetype'),
+         url('../font/game_of_thrones-webfont.svg#game_of_thronesregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Mopek*/

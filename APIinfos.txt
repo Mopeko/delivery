@@ -1,0 +1,6 @@
+API:
+-Lien base de données appli ou site
+	-GET recupere des info base de donnée
+	-POST poste des infos dans la base de donnée
+	-PUT met a jour la base de donnée
+	-DELETE supprime des infos de la base de donnée
