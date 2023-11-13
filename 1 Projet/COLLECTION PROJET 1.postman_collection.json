@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "532556f6-78b8-4e4e-85a0-387c6398b45f",
+		"name": "COLLECTION PROJET 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30691380"
+	},
+	"item": [
+		{
+			"name": "get items",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							" "
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get items with parameters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/items?parameters=price=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"items"
+					],
+					"query": [
+						{
+							"key": "parameters",
+							"value": "price=5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get items with id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/items/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"items",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post items",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 18,\r\n    \"name\": \"GREEK_SALAD\",\r\n    \"price\":5,\r\n    \"description\": \"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio numquam facilis ea iste dolor facere ad impedit.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update items with id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"GREEK_SALAD\",\r\n    \"price\":5,\r\n    \"description\": \"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio numquam facilis ea iste dolor facere ad impedit.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/items/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"items",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete items with id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/items/18",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"items",
+						"18"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

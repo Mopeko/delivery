@@ -54,18 +54,63 @@ app.get('/items/:id', (req, res) => {
   })
 })
 app.post('/items',(req,res)=>{
-const id = req.body.id;
-const name = req.body.name;
-const price = req.body.price;
-const description = req.body.description;
-connection.query('insert into items values(?,?,?,?)',[id,name,price,description],(err,result)=>{
+const ID = req.body.id;
+const Name = req.body.name;
+const Price = req.body.price;
+const Description = req.body.description;
+connection.query('insert into items values(?,?,?,?)',[ID,Name,Price,Description],(err,result)=>{
   if (err) {
     console.log(err)
   } else {
     res.send("Posted")
   }
 })
-
+})
+app.put('/items/:id', (req, res) => {
+  var ID = req.params.id;
+  const Name = req.body.name;
+  const Price = req.body.price;
+  const Description = req.body.description;
+  connection.query('UPDATE items SET Name=?, Price=?, Description=? WHERE id=?',[Name,Price,Description,ID],(err,result)=>{
+      if (err) {
+    console.log(err)
+  } else {
+    res.send("Updated ")
+  }
+  })
+})
+app.delete('/items/:id',(req,res)=>{
+  var ID = req.params.id;
+  connection.query('DELETE from items WHERE id=?', ID,(err,result)=>{
+      if (err) {
+    console.log(err)
+  } else {
+    res.send("Deleted")
+    console.log(result)
+  }
+})
+})
+app.get('/category', (req, res) => {
+  var parameters = req.q
+    connection.query("SELECT * FROM category", function (err, result, fields) {
+      if (err) {
+        console.log(err)
+      } else {
+        res.send(result)
+      }
+})
+app.post('/category',(req,res)=>{
+  const ID = req.body.id;
+  const Name = req.body.name;
+  const Description = req.body.description;
+  connection.query('insert into category values(?,?,?)',[ID,Name,Description],(err,result)=>{
+    if (err) {
+      console.log(err)
+    } else {
+      res.send("Posted")
+    }
+  })
+  })
 })
 app.listen(port, () => {
   console.log(`App listening on port ${port}`)
